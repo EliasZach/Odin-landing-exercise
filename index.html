@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
     <title>Landing Page</title>
 </head>
 <body>
     <header>
 
+        <div class="header-container">
+
         <div class="logo">Header Logo</div>
         <nav>
             <ul>
-                <li><a href="#">header link one</a></li>
-                <li><a href="#">header link two</a></li>
-                <li><a href="#">header link three</a></li>
+                <li><a href="#main-content">Sign up</a></li>
+                <li><a href="#random-info">Random info</a></li>
+                <li><a href="#call-to-action">It's time!</a></li>
             </ul>
         </nav>
 
@@ -22,67 +27,85 @@
 
     <main>
 
+        <div class="main-container" id="main-content">
+
         <div class="sign-up">
             <h1>This website is awesome</h1>
             <p>This website has some subtext that goes here under the main title. it's a smaller font and the color is lower contrast</p>
             <button>Sign up</button>
         </div>
         <div class="main-image">
-            this is a placeholder for an image
+            <img src="./img/pexels-monoar-rahman-22660-114907.jpg" alt="">
+        </div>
+
         </div>
 
     </main>
 
-    <div class="random-info">
+    <div class="random-info" id="random-info">
 
-        <h2>Some Random information</h2>
-        <div class="images-container">
-            <figure>
-                <img src="" alt="">
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure>
+            <h2>Some Random information</h2>
+            <div class="figure-container">
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/pexels-divinetechygirl-1181298.jpg" alt="">
+                    </div>
+                    <figcaption>this is some subtext under an illustration or image</figcaption>
+                </figure>
 
-            <figure>
-                <img src="" alt="">
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure>
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/pexels-goumbik-574070.jpg" alt="">
+                    </div>
+                    <figcaption>this is some subtext under an illustration or image</figcaption>
+                </figure>
 
-            <figure>
-                <img src="" alt="">
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure>
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/pexels-pixabay-270366.jpg" alt="">
+                    </div>
+                    <figcaption>this is some subtext under an illustration or image</figcaption>
+                </figure>
 
-            <figure>
-                <img src="" alt="">
-                <figcaption>this is some subtext under an illustration or image</figcaption>
-            </figure>
+                <figure>
+                    <div class="image-container">
+                    <img src="./img/pexels-vladbagacian-3987066.jpg" alt="">
+                    </div>
+                    <figcaption>this is some subtext under an illustration or image</figcaption>
+                </figure>
+            </div>
+
+    </div>
+
+    <div class="quote" id="quote">
+
+        <div class="quote-container">
+
+            <i>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</i><br>
+            <div class="author">
+            <strong>-Thor, God of Thunder</strong>
+            </div>
+
         </div>
 
     </div>
 
-    <div class="quote">
-
-        <i>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice.</i>
-        <strong>-Thor, God of Thunder</strong>
-
-    </div>
-
-    <div class="call-to-action">
+    <div class="call-to-action" id="call-to-action">
 
         <div class="cta-container">
 
             <div class="cta-text">
-            <h3>Call to action! It's time!</h3>
-            <p>Sign up for our product by clicking that button right over there!</p>
+                <h3>Call to action! It's time!</h3>
+                <p>Sign up for our product by clicking that button right over there!</p>
             </div>
 
             <button class="cta-button">Sign up</button>
         
         </div>
 
-        <footer>Copyright @ The Odin Project 2021</footer>
-
     </div>
+
+    <footer>Copyright @ The Odin Project 2021</footer>
 
 </body>
 </html>
